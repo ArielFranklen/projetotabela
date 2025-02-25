@@ -1,0 +1,212 @@
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 20px;
+        flex-direction: column;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        
+    }
+
+    header {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 15px ;
+       
+        text-align: center;
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    h1 {
+        margin-bottom: 20px;
+        font-size: 20px;
+    }
+
+    .container {
+        width: 100%;
+        max-width: 400px;
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .input-group {
+        margin-bottom: 15px;
+        width: 100%;
+        position: relative;
+    }
+    
+    .input-group label {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .input-group input,
+    .input-group textarea,
+    .input-group select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+    }
+
+    .input-group .olho {
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        cursor: pointer;
+    }
+
+    .input-group input[type="password"] {
+        position: relative;
+        padding-right: 30px;
+    }
+    .input-group input[type="tel"] {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        font-size: 14px;
+    }
+
+    .input-group .olho {
+        position: absolute;
+        right: 10px;
+        top: 70%;
+        transform: translateY(-50%);
+        cursor: pointer;
+        z-index: 1;
+    }
+
+    .radio-group {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+            gap: 15px;
+        margin-top: 5px;
+    }
+
+.radio-group input{
+        margin-right: 10px; 
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        border: none;
+        background-color: #4CAF50;
+        color: white;
+        font-size: 16px;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+    button + button {
+        margin-top: 15px;
+    }
+
+    button:hover {
+        background-color: #45a049;
+    }
+
+    button.reset-btn {
+        background-color: #f44336;
+        margin-top: 10px;
+    }
+
+    button.reset-btn:hover {
+                    background-color: #e53935;
+    }
+    
+    textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        resize: none;
+    }
+
+    footer {
+        width: 100%;
+        background-color: #4CAF50;
+        color: white;
+        padding: 10px 0;
+        font-size: 14px;
+        text-align: center;
+        margin-top: 20px;
+        border-radius: 4px;
+    }
+
+    footer h5 {
+        margin-bottom: 10px;
+    }
+
+    footer p {
+        margin-bottom: 0;
+    }
+
+    .links a {
+        text-decoration: none;
+        color: #4CAF50;
+        font-size: 16px;
+    }
+
+    .links a:hover {
+        text-decoration: underline;
+    }
+    nav {
+        width: 100%;
+        background-color: #4CAF50;
+        margin-bottom: 20px;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        font-size: 16px;
+    }
+
+    nav ul li a:hover {
+        text-decoration: underline;
+    }
+    .footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 15px;
+    font-weight: bold;
+}

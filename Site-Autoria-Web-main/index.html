@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalho</title>
+    <script src="js/tabela.js">defer</script>
+    <script src="js/script.js" defer></script> 
+    <link rel="stylesheet" href="css/estilo-html.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> 
+    <link rel="stylesheet" href="css/estilo-tabela.css">
+    <link rel="stylesheet" href="link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <header class="site-header">
+    <div class="header-content">
+        <h1>Trabalho de Autoria Web</h1>
+    </div>
+</header>
+
+<nav class="site-nav">
+    <ul>
+        <li><a href="desenvolvedores.html">Desenvolvedores</a></li>
+        
+        
+        
+        
+
+    </ul>
+</nav>
+
+
+    <h1>Cadastre-se</h1>
+
+    <div class="container " >
+        <form  id="meuFormulario">
+            
+            <div class="input-group">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome"  class="nom">
+            </div>
+
+            <div class="input-group">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" >
+            </div>
+
+            <div class="input-group">
+                <label for="senha">Senha:</label>
+                <input type="password" id="senha" name="senha" >
+                <span id="mostrar_senha" class="olho">
+                    <i class="fas fa-eye"></i>
+                </span>
+            </div>
+
+            <div class="input-group">
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento">
+            </div>
+
+            <div class="input-group genero-group">
+                <label for="genero">Gênero:</label><br>
+                <div class="radio-group">
+                    <input type="radio" id="masculino" name="genero" value="masculino">
+                    <label for="masculino">Masculino</label>
+                    <input type="radio" id="feminino" name="genero" value="feminino">
+                    <label for="feminino">Feminino</label>
+                </div>
+            </div>
+
+            <div class="input-group">
+                <label for="redes_sociais">Redes Sociais:</label>
+                <input type="url" id="redes_sociais" name="redes_sociais" placeholder="URL da sua rede social">
+            </div>
+
+            <div class="input-group">
+                <label for="matricula">Matrícula:</label>
+                <input type="number" id="matricula" name="matricula" placeholder="Ex.: 202411140100...">
+            </div>
+
+            <div class="input-group">
+                <label for="campus">Campus:</label>
+                <select id="campus" name="campus">
+                    <option value="Apodi">Apodi</option>
+                    <option value="Caicó">Caicó</option>
+                    <option value="Canguaretama">Canguaretama</option>
+                    <option value="Ceará-Mirim">Ceará-Mirim</option>
+                    <option value="Currais Novos">Currais Novos</option>
+                    <option value="Ipanguaçu">Ipanguaçu</option>
+                    <option value="João Câmara">João Câmara</option>
+                    <option value="Jucurutu">Jucurutu</option>
+                    <option value="Lajes">Lajes</option>
+                    <option value="Macau">Macau</option>
+                    <option value="Mossoró">Mossoró</option>
+                    <option value="Natal-Central">Natal-Central</option>
+                    <option value="Natal-Cidade Alta">Natal-Cidade Alta</option>
+                    <option value="Natal-Zona Leste">Natal-Zona Leste</option>
+                    <option value="Natal-Zona Norte">Natal-Zona Norte</option>
+                    <option value="Nova Cruz">Nova Cruz</option>
+                    <option value="Parelhas">Parelhas</option>
+                    <option value="Parnamirim">Parnamirim</option>
+                    <option value="Pau dos Ferros">Pau dos Ferros</option>
+                    <option value="Santa Cruz">Santa Cruz</option>
+                    <option value="São Gonçalo do Amarante">São Gonçalo do Amarante</option>
+                    <option value="São Paulo do Potengi">São Paulo do Potengi</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="temas">Telefone:</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Ex: (99) 99999-9999" pattern="^\(\d{2}\)\s\d{5}-\d{4}$" >
+            </div>
+
+            <button id="meuBotao" type="submit" >Enviar</button> 
+            <button type="reset">Resetar</button>
+        </form>
+    </div>
+
+    
+    
+    
+  <table class="table table-striped vertical-align-middle">
+        <caption class="text-center shadow">informaçoes</caption>
+        <thead>
+            <tr>
+                <th onclick="sortTable(0)">Nome</th>
+                <th onclick="sortTable(1)">Campus</th>
+            </tr>
+
+        </thead>
+        <tbody id="tabela-corpo">
+         <tr>
+            <td>Lilian</td>
+            <td>Macau</td>
+         </tr>
+         <tr>
+            <td>Pedro</td>
+            <td>São Paulo do Potengi</td>
+            
+         </tr>
+         <tr>
+            <td>Gabriel</td>
+            <td>Parnamirim</td>
+         </tr>
+         <tr>
+            <td>Stella</td>
+            <td>Natal-Central</td>
+         </tr>
+         <tr>
+            <td>Marcos</td>
+            <td>Lajes</td>
+         </tr>
+         <tr>
+            <td>Daniel</td>
+            <td>Apodi</td>
+         </tr>
+         <tr>
+            <td>Nicolas</td>
+            <td>Nova Cruz</td>
+         </tr>
+         <tr>
+            <td>João</td>
+            <td>Canguaretama</td>
+         </tr>
+         <tr>
+            <td>Lucas</td>
+            <td>Parnamirim</td>
+         </tr>
+         <tr>
+            <td>Mateus</td>
+            <td>Pau dos Ferros</td>
+         </tr>
+
+        </tbody>
+        <tfoot>
+            <tr >
+                <td colspan="4">Direitos reservados &copy;</td>
+            </tr>
+
+
+        </tfoot>
+    </table>  
+
+
+    <footer class="footer">
+        <p>IFRN Campus Santa Cruz</p>
+        <p>Trabalho de Autoria Web</p>
+        <p>Prof. Marcelo Figueiredo Barbosa Júnior</p>
+        <p>Componentes do grupo: Ariel Franklen, Renan Mendonça, Ryan Joseph</p>
+    </footer>
+</body>
+
+</html>
